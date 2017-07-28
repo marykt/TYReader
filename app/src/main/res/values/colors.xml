@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#66ccff</color>
+    <color name="colorPrimaryDark">#66ccff</color>
+    <color name="colorAccent">#66ccff</color>
+    <color name="TianYiBlue">#66ccff</color>
+    <color name="white">#ffffff</color>
+</resources>
