@@ -9,6 +9,7 @@ import org.jsoup.nodes.Element;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.Collections;
 import java.util.Vector;
 
 /**
@@ -36,7 +37,7 @@ public class Page implements Serializable {
     private Vector<Integer> get_text_n = new Vector<Integer>();
 
   //  @RequiresApi(api = Build.VERSION_CODES.N)
-    @RequiresApi(api = Build.VERSION_CODES.N)
+///    @RequiresApi(api = Build.VERSION_CODES.N)
     public Page(String url, String title) {//接口改变//预计可以和之前的融合
         //url="http://www.biquge.com/13_13453/7786250.html";
         Document doc = null;
@@ -57,7 +58,8 @@ public class Page implements Serializable {
 
 
         lenget_text(doc, 0);
-        get_text_n.sort(null);
+        Collections.sort(get_text_n);
+       // get_text_n.sort(null);
         System.out.println(get_text_n);
         int max_n=0;
         int t=0;
